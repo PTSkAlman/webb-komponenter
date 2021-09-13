@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    margin-top: auto;
+    background-color: #f1f1f1;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+.group {
+    display: flex;
+    justify-content: space-between;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
