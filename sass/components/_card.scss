@@ -1,0 +1,34 @@
+.cards {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    border-radius: 8px;
+    width: 13rem;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    padding: 1rem;
+    margin-top: 1rem;
+
+    & h1 {
+        font-size: 2rem;
+        padding-bottom: 0;
+    }
+
+    & img {
+        max-width: 13rem;
+    }
+
+    &:hover {
+        background-color: darken($color: #EBEBEB, $amount: 10%);
+    }
+
+    &-right {
+        text-align: right;
+    }
+    &-right > button {
+        padding: 0.5rem;
+        border-radius: 12px;
+    }
+}

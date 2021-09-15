@@ -1,0 +1,35 @@
+.navbar {
+    min-height: 3rem;
+    background-color: aqua;
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: $breakpoint-md) {
+            flex-direction: column;            
+        }
+    }
+}
+.nav {
+    display: flex;
+    list-style: none;
+
+    &-item {
+        padding-left: 1rem;
+    }
+
+    &-link {
+
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
+}

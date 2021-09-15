@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #010101;
+}
+
+body {
+  background-color: #f1f1f1;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cards {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border-radius: 8px;
+  width: 13rem;
+  background-color: #ebebeb;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.card h1 {
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+.card img {
+  max-width: 13rem;
+}
+.card:hover {
+  background-color: #d2d2d2;
+}
+.card-right {
+  text-align: right;
+}
+.card-right > button {
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.navbar {
+  min-height: 3rem;
+  background-color: aqua;
+  font-size: 1.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 24rem) {
+  .navbar-inner {
+    flex-direction: column;
+  }
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  padding-left: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 24rem) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+.cta {
+  position: relative;
+  background-image: url("https://github.com/PTSkAlman/webb-komponenter/blob/master/images/TE19.jpg?raw=true");
+  background-size: cover;
+  width: 100%;
+  z-index: 2;
+}
+.cta > h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  z-index: 2;
+}
+.cta-right {
+  text-align: right;
+  z-index: 2;
+}
+.cta-right > p {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.cta-right > button {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  border: none;
+  z-index: 2;
+}
+.cta-right > button:hover {
+  background-color: gainsboro;
+}
+.cta-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 255, 0.6);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

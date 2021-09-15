@@ -1,0 +1,31 @@
+$primary: #00aaff;
+$secondary: #f1f1f1;
+
+$breakpoint-lg: 48rem;
+$breakpoint-md: $breakpoint-lg/2;
+$breakpoint-sm: $breakpoint-md/2;
+
+$font-family: 'Comic Sans', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #010101;
+}
+body {
+    background-color: $secondary;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+}
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 3rem;
+}
+
+@import "utilities/container";
+@import "components/card";
+@import "components/nav";
+@import "components/cta"
